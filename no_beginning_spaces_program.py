@@ -4,6 +4,8 @@
 string = input("Enter a string with spaces in the beginning: ")
 spaces = 0
 
-#remove the beginning spaces without using lstrip()
+#loop through the string to count the beginning spaces by finding the index where the first non-space character appears
+while spaces < string and string[spaces] == " ":
+    spaces += 1
 
 #display new string
