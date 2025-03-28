@@ -12,3 +12,4 @@ else:
     new_string = string
 
 #display new string
+print(new_string)
