@@ -4,5 +4,12 @@
 #ask the user to input a string
 string = input("Enter a string: ")
 
-#check if all characters are in uppercase
+#check if all characters are in uppercase by finding if a single character is lowercase, then assigning all_caps as False
+all_caps = True
+
+for char in string:
+    if "a" <= char <= "z":
+        all_caps = False
+        break
+
 #display the result
