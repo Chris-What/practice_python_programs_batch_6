@@ -6,4 +6,9 @@ string = input("Enter a string: ")
 spaces = int(input("Enter amount of spaces to be added: "))
 
 #add the spaces at the end of the string
+if len(string) >= spaces:
+    new_string = string
+else:
+    new_string = string + " " * (spaces - len(string))
+    
 #display the result
