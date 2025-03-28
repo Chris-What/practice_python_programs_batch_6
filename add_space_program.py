@@ -12,3 +12,4 @@ else:
     new_string = string + " " * (spaces - len(string))
     
 #display the result
+print(new_string)
