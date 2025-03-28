@@ -8,8 +8,9 @@ string = input("Enter a string with uppercase letters: ")
 new_string = ""
 for char in string:
     if "A" <= char <= "Z":
-        new_string = chr(ord(char) + 32)
+        new_string += chr(ord(char) + 32)
     else:
         new_string += char
 
 #display the new string
+print(new_string)
