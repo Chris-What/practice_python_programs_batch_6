@@ -12,4 +12,8 @@ for char in string:
         all_caps = False
         break
 
-#display the result
+#display the result depending if all_caps is True or False
+if all_caps:
+    print("The string is fully in uppercase.")
+else:
+    print("The string is not fully in uppercase.")
