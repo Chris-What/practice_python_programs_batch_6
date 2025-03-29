@@ -13,9 +13,14 @@ if len(string) > 0:
 #convert the rest of the letters into lowercase using ASCII values
     other_letters = ""
     for char in string[1:]:
-        if "A" <= other_letters <= "Z":
-            other_letters += chr(ord(other_letters) + 32)
+        if "A" <= char <= "Z":
+            other_letters += chr(ord(char) + 32)
         else:
             other_letters += char
 
-#display the new string
+#create and display the new string
+    new_string = first_letter + other_letters
+else:
+    new_string = string
+
+print(new_string)
