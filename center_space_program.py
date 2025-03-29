@@ -13,4 +13,7 @@ else:
     left_spaces = total_spaces // 2
     right_spaces = total_spaces - left_spaces
 
-#create and display a new string centered within the spaces
+#create and display a new string centered within the spaces by adding all the new variables together
+new_string = " " * left_spaces + string + " " * right_spaces
+
+print(new_string)
