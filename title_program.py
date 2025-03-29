@@ -23,4 +23,9 @@ for word in words:
             else:
                 other_letters += char
 
+#combine the first letter to the other letters and append them into the list
+        new_words.append(first_letter + other_letters)
+    else:
+        new_words.append("")
+
 #display the new string
