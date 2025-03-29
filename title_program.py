@@ -11,13 +11,13 @@ new_words = []
 #capitalize the first letter of every word by using ASCII values
 for word in words:
     if len(word) > 0:
-        first_letter = []
+        first_letter = word[0]
         if "a" <= first_letter <= "z":
             first_letter = chr(ord(first_letter) - 32)
 
 #convert every other letter into lowercase by using ASCII values
         other_letters = ""
-        for char in words[1:]:
+        for char in word[1:]:
             if "A" <= char <= "Z":
                 other_letters += chr(ord(char) + 32)
             else:
@@ -28,4 +28,7 @@ for word in words:
     else:
         new_words.append("")
 
-#display the new string
+#put the words together into one string and display the new string
+new_string = " ".join(new_words)
+
+print(new_string)
