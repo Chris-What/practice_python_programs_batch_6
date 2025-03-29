@@ -15,3 +15,4 @@ for char in string:
         new_string += char
         
 #display the new string
+print(new_string)
