@@ -3,12 +3,12 @@
 
 #ask the user to input a string and the part they want to find
 string = input("Enter a string: ")  
-part = input("Enter the substring to find: ")  
+part = input("Enter the part to find: ")  
 
 #initialize a variable to store the index  
 found_part = -1  
 
-#loop through the string to find the first occurrence of the part  
+#loop through the string to find the first location of the part  
 part_length = len(part)  
 
 for i in range(len(string) - part_length + 1):  
